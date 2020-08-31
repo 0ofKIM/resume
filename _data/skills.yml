@@ -1,12 +1,12 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+# Programming Language
+- skill: Programming Language
+  description: <li>Objective-C</li><li>Swift</li><li>RxSwift</li><li>Cocos2d</li><li>Cocos2d-x</li>
 
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
+# Architecture
+- skill: Architecture
+  description: <li>MVC Pattern</li><li>MVVM Pattern</li>
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+# Use Library
+- skill: Use Library
+  description: <li>RxAlamofire</li><li>Firebase</li><li>Snapkit</li><li>RxDataSources</li><li>...</li>
