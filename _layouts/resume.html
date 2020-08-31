@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+  {% if site.resume_looking_for_work == 'yes' %}
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
@@ -79,7 +80,7 @@
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description">- {{ project.role }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>
         {% endfor %}
@@ -237,5 +238,12 @@
     </div>
 
   </body>
+  {% elsif site.resume_looking_for_work == 'no' %}
+  <body>
+    <div>not info</div>
+  </body>
+  {% else %}
+  {% endif %}
+
 
 </html>
